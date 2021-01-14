@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/src/fonts/OpenSans-Light.woff2") format("woff2"), url("/src/fonts/OpenSans-Light.woff") format("woff"), url("/src/fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/src/fonts/OpenSans-LightItalic.woff2") format("woff2"), url("/src/fonts/OpenSans-LightItalic.woff") format("woff"), url("/src/fonts/OpenSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/src/fonts/OpenSans-Regular.woff2") format("woff2"), url("/src/fonts/OpenSans-Regular.woff") format("woff"), url("/src/fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/src/fonts/OpenSans-Italic.woff2") format("woff2"), url("/src/fonts/OpenSans-Italic.woff") format("woff"), url("/src/fonts/OpenSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/src/fonts/OpenSans-SemiBold.woff2") format("woff2"), url("/src/fonts/OpenSans-SemiBold.woff") format("woff"), url("/src/fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/src/fonts/OpenSans-SemiBoldItalic.woff2") format("woff2"), url("/src/fonts/OpenSans-SemiBoldItalic.woff") format("woff"), url("/src/fonts/OpenSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/src/fonts/OpenSans-Bold.woff2") format("woff2"), url("/src/fonts/OpenSans-Bold.woff") format("woff"), url("/src/fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/src/fonts/OpenSans-BoldItalic.woff2") format("woff2"), url("/src/fonts/OpenSans-BoldItalic.woff") format("woff"), url("/src/fonts/OpenSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/src/fonts/OpenSans-ExtraBold.woff2") format("woff2"), url("/src/fonts/OpenSans-ExtraBold.woff") format("woff"), url("/src/fonts/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/src/fonts/OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("/src/fonts/OpenSans-ExtraBoldItalic.woff") format("woff"), url("/src/fonts/OpenSans-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap; }
+
+/**
+iconfont Webfont
+*/
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/iconfont.eot?1610299802316");
+  src: url("../fonts/iconfont.eot?#iefix-1610299802316") format("embedded-opentype"), url("../fonts/iconfont.woff2?1610299802316") format("woff2"), url("../fonts/iconfont.woff?1610299802316") format("woff"), url("../fonts/iconfont.ttf?1610299802316") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^='icon-']::before,
+[class*=' icon-']::before {
+  font-family: 'iconfont';
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  font-size: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*
+Glyphs list
+*/
+.icon-icon-clock::before {
+  content: '\ea01'; }
+
+.icon-icon-envelope::before {
+  content: '\ea02'; }
+
+.icon-icon-phone::before {
+  content: '\ea03'; }
+
+.logo::before, .info-container::before, .logo::after, .info-container::after {
+  content: '';
+  display: table; }
+
+.logo::after, .info-container::after {
+  clear: both; }
+
+.wrap {
+  width: 100%;
+  max-width: 1172px;
+  padding: 0px;
+  margin: 0 auto; }
+
+.body {
+  font-family: "Open Sans", serif;
+  font-weight: 400; }
+
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%; }
+
+.overlay {
+  width: 100%;
+  background-color: rgba(25, 25, 25, 0.5); }
+
+.logo {
+  padding-top: 70px; }
+
+.header-logo {
+  float: left;
+  width: 30%; }
+
+.logo-main {
+  font-size: 38px;
+  color: #FFFFFF; }
+
+.logo-txt {
+  font-size: 14px;
+  color: #FFFFFF; }
+
+.header-info {
+  float: right;
+  width: 70%; }
+
+.info-items {
+  font-size: 0; }
+
+.info-item {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top; }
+
+.icon-icon-phone, .icon-icon-envelope, .icon-icon-clock {
+  float: left;
+  font-size: 20px;
+  color: #41C379;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  padding-left: 10px;
+  padding-top: 7px; }
+
+.icon-txt {
+  float: right;
+  margin-left: 53px; }
+
+.info-span {
+  font-weight: bold;
+  font-size: 16px;
+  color: #FFFFFF; }
+
+.info-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block; }

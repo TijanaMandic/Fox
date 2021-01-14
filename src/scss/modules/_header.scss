@@ -1,0 +1,82 @@
+.bg-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.overlay {
+    width: 100%;
+    background-color: rgba($codgray, 0.5);
+}
+
+.logo {
+    @extend %clearfix;
+    padding-top: 70px;
+}
+
+.header-logo {
+    float: left;
+    width: 30%;
+}
+
+.logo-main {
+    font-size: 38px;
+    color: $white;
+}
+
+.logo-txt {
+    font-size: 14px;
+    color: $white;
+}
+
+.header-info {
+    float: right;
+    width: 70%;
+}
+
+.info-items {
+    font-size: 0;
+    //:last-child {
+        
+}
+
+.info-item {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    //margin-right: 30px;
+}
+
+.info-container {
+    @extend %clearfix;
+}
+
+.icon-icon-phone,.icon-icon-envelope,.icon-icon-clock {
+    float: left;
+    font-size: 20px;
+    color: $maingreen;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: $white;
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+.icon-txt {
+    float: right;
+    margin-left: 53px;
+}
+
+.info-span {
+    font-weight: bold;
+    font-size: 16px;
+    color: $white;
+}
+
+.info-link {
+    color: $white;
+    text-decoration: none;
+    display: block;
+}
