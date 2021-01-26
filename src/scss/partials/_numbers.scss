@@ -1,0 +1,82 @@
+.numbers {
+    padding: 80px 0;
+}
+
+.numbers-title {
+    margin: 0 auto 80px;
+    max-width: 55%;
+    text-align: center;
+}
+
+.numbers-title-txt {
+    font-size: 14px;
+    color: $newblack;
+    text-align: center;
+}
+
+.numbers-title-h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+    color: $newblack;
+    text-align: center;
+}
+
+.numbers-cards {
+    font-size: 0;
+    :last-child {
+        border-right: none;
+    }
+}
+
+.numbers-card {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    width: 25%;
+    border-right: 1px solid rgba(71, 71, 71, 0.5);
+}
+
+.icon-icon-name, .icon-icon-skull, .icon-icon-umbrella, .icon-icon-shop {
+    font-size: 80px;
+    text-align: center;
+    color: $newblack;
+    opacity: 0.5;
+    margin-bottom: 30px;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.numbers-link-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.numbers-link {
+    font-size: 48px;
+    font-weight: 700;
+    text-decoration: none;
+    color: $maingreen;
+}
+
+.numbers-txt {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $newblack;
+}
+
+@include breakpoint(phone) {
+    .numbers-cards {
+        :nth-child(1){
+            margin-bottom: 28px;
+        }
+        :nth-child(2){
+            margin-bottom: 28px;
+        }
+    }
+    .numbers-card {
+        width: 50%;
+        border: none;
+    }
+}

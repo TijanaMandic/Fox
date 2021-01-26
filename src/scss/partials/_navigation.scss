@@ -1,0 +1,246 @@
+.navigation {
+    margin-top: 50px;
+}
+
+.main-navigation {
+    font-size: 0;
+    background-color: rgba($codgray, 0.5);
+    padding-left: 29px;
+}
+
+.navigation-item {
+    display: inline-block;
+    padding: 22px 14px 22px 14px;
+}
+
+.item-drop {
+    font-size: 0;
+    background-color: rgba($maingreen, 0.7);
+    width: 152px;
+    margin-top: 21px;
+    &:hover {
+        background-color: $maingreen;
+    }
+    &:last-child {
+        border-bottom: none;
+    }   
+}
+
+.navigation-drop {
+    display: block;
+    padding: 15px 10px 15px 10px;
+    border-bottom: 1px solid rgba($codgray, 0.7);
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+    display: none;
+}
+
+.p-relative:hover .p-absolute {
+    display: block;
+}
+
+.navigation-link {
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    &:hover {
+        color: $maingreen;
+    }
+}
+
+.drop-link {
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: $white;
+}
+
+.icon-icon-arrow {
+    display: inline;
+    text-align: center;
+    font-size: 10px;
+    padding-right: 3px;
+}
+
+.active {
+    color: $maingreen;
+}
+
+// js + breakpoints
+
+.nav-toggle {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 110;
+    border: 0;
+    background-color: transparent;
+}
+
+.nav-toggle-line {
+    position: absolute;
+    top: 23px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: $maingreen;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 50px;
+        height: 4px;
+        background-color: $maingreen;
+    }
+    &::before {
+        top: -14px;
+    }
+    &::after {
+        top: 14px;
+    }
+}
+
+@include breakpoint(tablet) {
+    .nav-toggle {
+        display: block;
+    }
+    .navigation {
+        position: fixed;
+        top: -50px;
+        right: 0px;
+        width: 35%;
+        height: 100%;
+        background-color: $maingreen;
+        opacity: 0.9;
+        z-index: 100;
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+    .main-navigation {
+        background-color: $maingreen;
+        text-align: justify;
+        padding-top: 80px;
+        padding-left: 30px;
+    }
+    .navigation-item {
+        display: block;
+    }
+    .navigation-link {
+        color: $white;
+        font-size: 20px;
+        font-weight: 700px;
+    }
+    .p-absolute{
+        position: relative;
+        display: block;
+        text-align: center;
+    }
+    .item-drop {
+        margin-top: 10px;
+    }
+    .navigation-drop {
+        text-align: justify;
+        border-bottom: none;
+    }
+    .drop-link {
+        text-decoration: underline;
+    }
+    .nav-toggle-open {
+        .nav-toggle-line {
+            background-color: transparent;
+            &::before {
+                top: 0;
+                transform: rotate(135deg);
+                background-color: $white;
+            }
+            &::after {
+                top: 0;
+                transform: rotate(-135deg);
+                background-color: $white;
+            }
+        }
+    }
+    .nav-open {
+        transform: translateX(0);
+    }
+}
+
+@include breakpoint(phone) {
+    .nav-toggle {
+        display: block;
+    }
+    .navigation {
+        position: fixed;
+        top: -50px;
+        right: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: $maingreen;
+        opacity: 0.9;
+        z-index: 100;
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+    .main-navigation {
+        background-color: $maingreen;
+        text-align: justify;
+        padding-top: 80px;
+        padding-left: 30px;
+    }
+    .navigation-item {
+        display: block;
+        padding: 13px 14px 5px 14px;
+    }
+    .navigation-link {
+        color: $white;
+        font-size: 20px;
+        font-weight: 700px;
+    }
+    .p-absolute{
+        position: relative;
+        display: block;
+        text-align: center;
+    }
+    .item-drop {
+        margin-top: 10px;
+    }
+    .navigation-drop {
+        text-align: justify;
+        border-bottom: none;
+        padding: 8px 10px 8px 10px;
+    }
+    .drop-link {
+        text-decoration: underline;
+    }
+    .nav-toggle-open {
+        .nav-toggle-line {
+            background-color: transparent;
+            &::before {
+                top: 0;
+                transform: rotate(135deg);
+                background-color: $white;
+            }
+            &::after {
+                top: 0;
+                transform: rotate(-135deg);
+                background-color: $white;
+            }
+        }
+    }
+    .nav-open {
+        transform: translateX(0);
+    }
+}
+

@@ -7,7 +7,7 @@
 
 .overlay {
     width: 100%;
-    background-color: rgba($codgray, 0.5);
+    background-color: rgba($codgray, 0.6);
 }
 
 .logo {
@@ -23,9 +23,14 @@
 .logo-main {
     font-size: 38px;
     color: $white;
+    text-decoration: none;
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 .logo-txt {
+    display: block;
     font-size: 14px;
     color: $white;
 }
@@ -33,19 +38,21 @@
 .header-info {
     float: right;
     width: 70%;
+    padding-top: 7px;
 }
 
 .info-items {
     font-size: 0;
-    //:last-child {
-        
+    :last-child {
+        margin-right: 0;
+    }    
 }
 
 .info-item {
     font-size: 16px;
     display: inline-block;
     vertical-align: top;
-    //margin-right: 30px;
+    margin-right: 39px;
 }
 
 .info-container {
@@ -64,13 +71,13 @@
     padding-top: 7px;
 }
 
-.icon-txt {
+.info-txt {
     float: right;
-    margin-left: 53px;
+    margin-left: 13px;
 }
 
 .info-span {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     color: $white;
 }
@@ -79,4 +86,44 @@
     color: $white;
     text-decoration: none;
     display: block;
+    padding-top: 5px;
 }
+
+.info-hours {
+    color: $white;
+    display: block;
+    padding-top: 5px;
+}
+
+@include breakpoint(tablet) {
+    .header-logo {
+        display: block;
+        width: 100%;
+    }
+
+    .header-info {
+        display: block;
+        width: 100%;
+        padding-top: 50px;
+    }
+}
+
+@include breakpoint(phone) {
+    .logo {
+        padding-top: 50px;
+    }
+    .header-logo {
+        display: block;
+        width: 100%;
+    }
+    .header-info {
+        display: block;
+        width: 100%;
+        padding-top: 50px;
+    }
+    .info-item {
+        margin-bottom: 15px;
+    }
+}
+    
+    

@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('../fonts/iconfont.eot?1610299802316');
-	src: url('../fonts/iconfont.eot?#iefix-1610299802316') format('embedded-opentype'),
-		url('../fonts/iconfont.woff2?1610299802316') format('woff2'),
-		url('../fonts/iconfont.woff?1610299802316') format('woff'),
-		url('../fonts/iconfont.ttf?1610299802316') format('truetype');
+	src: url('../fonts/iconfont.eot?1611484182240');
+	src: url('../fonts/iconfont.eot?#iefix-1611484182240') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1611484182240') format('woff2'),
+		url('../fonts/iconfont.woff?1611484182240') format('woff'),
+		url('../fonts/iconfont.ttf?1611484182240') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -33,14 +33,86 @@ iconfont Webfont
 Glyphs list
 */
 
-.icon-icon-clock::before {
+.icon-icon-arrow::before {
 	content: '\ea01';
 }
 
-.icon-icon-envelope::before {
+.icon-icon-bishop::before {
 	content: '\ea02';
 }
 
-.icon-icon-phone::before {
+.icon-icon-clock::before {
 	content: '\ea03';
+}
+
+.icon-icon-coin::before {
+	content: '\ea04';
+}
+
+.icon-icon-dribble::before {
+	content: '\ea05';
+}
+
+.icon-icon-envelope::before {
+	content: '\ea06';
+}
+
+.icon-icon-eraser::before {
+	content: '\ea07';
+}
+
+.icon-icon-eye::before {
+	content: '\ea08';
+}
+
+.icon-icon-facebook::before {
+	content: '\ea09';
+}
+
+.icon-icon-google::before {
+	content: '\ea0a';
+}
+
+.icon-icon-label::before {
+	content: '\ea0b';
+}
+
+.icon-icon-linkedin::before {
+	content: '\ea0c';
+}
+
+.icon-icon-name::before {
+	content: '\ea0d';
+}
+
+.icon-icon-phone::before {
+	content: '\ea0e';
+}
+
+.icon-icon-shop::before {
+	content: '\ea0f';
+}
+
+.icon-icon-skull::before {
+	content: '\ea10';
+}
+
+.icon-icon-topbtn::before {
+	content: '\ea11';
+}
+
+.icon-icon-twitter::before {
+	content: '\ea12';
+}
+
+.icon-icon-umbrella::before {
+	content: '\ea13';
+}
+
+.icon-icon-user::before {
+	content: '\ea14';
+}
+
+.icon-icon-vk::before {
+	content: '\ea15';
 }

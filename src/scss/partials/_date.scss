@@ -1,0 +1,167 @@
+.date-admin {
+    padding: 80px 0;
+}
+
+.date-admin-title {
+    margin: 0 auto 80px;
+    max-width: 55%;
+    text-align: center;
+}
+
+.date-admin-txt {
+    font-size: 14px;
+    color: $newblack;
+    text-align: center;
+}
+
+.date-admin-h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+    color: $newblack;
+    text-align: center;
+}
+
+//containers
+
+.date-admin-container {
+    font-size: 0;
+    margin-bottom: 80px;
+}
+
+.date-admin-inner {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: 0;
+}
+
+.date-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 15%;
+    font-size: 16px;
+}
+
+.date-day {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $newblack;
+    background-color: $gray;
+    padding: 12px 0;
+    border-bottom: 1px solid $newblack;
+    opacity: 0.6;
+    width: 60px;
+}
+
+.date-month {
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $newblack;
+    background-color: $gray;
+    padding: 8px 0;
+    width: 60px;
+}
+
+.admin-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 75%;
+    font-size: 16px;
+}
+
+.admin-icon-list {
+    font-size: 0;
+}
+
+.admin-icon-item {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.icon-icon-user, .icon-icon-label {
+    font-size: 13px;
+    color: $newblack;
+}
+
+.icon-icon-user {
+    padding-right: 10px;
+    border-right: 1px solid $newblack;
+}
+
+.icon-icon-label {
+    padding-left: 10px;
+}
+
+.user-link {
+    font-size: 13px;
+    color: $maingreen;
+    text-decoration: none;
+    padding-left: 7px;
+    text-transform: capitalize;
+}
+
+.admin-title {
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: $newblack;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.admin-txt {
+    font-size: 14px;
+    line-height: 25px;
+    color: $newblack;
+    margin-bottom: 30px;
+}
+
+.admin-link {
+    font-size: 14px;
+    line-height: 25px;
+    color: $maingreen;
+    text-decoration: none;
+}
+
+.admin-link-btn {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.admin-link-btn-inner {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 18px 10px;
+    color: $white;
+    background-color: $maingreen;
+    border: 1px solid $maingreen;
+    &:hover {
+        background-color: transparent;
+        color: $newblack;
+        border-color: $newblack;
+    }
+}
+
+@include breakpoint(tablet) {
+    .date-container {
+        width: 20%;
+    }
+}
+
+@include breakpoint(phone) {
+    .date-admin-inner {
+        display: block;
+        width: 100%;
+    }
+    .date-container {
+        margin-right: 26px;
+    }
+}

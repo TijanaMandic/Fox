@@ -1,0 +1,34 @@
+.footer-last-row {
+    background-color: $lastrow;
+}
+
+.last-row-container {
+    @extend %clearfix;
+    padding: 20px 0;
+}
+
+.last-txt-left {
+    float: left;
+    font-size: 14px;
+    line-height: 25px;
+    color: $textgray;
+}
+
+.last-txt-right {
+    float: right;
+    font-size: 14px;
+    line-height: 25px;
+    color: $textgray;
+}
+
+@include breakpoint(phone) {
+    .last-txt-left {
+        display: block;
+        width: 100%;
+    }
+    .last-txt-right {
+        display: block;
+        width: 100%;
+    }
+}
+

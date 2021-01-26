@@ -1,0 +1,58 @@
+.banner {
+    padding: 180px 0;
+}
+
+.banner-h2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+}
+
+.banner-h1 {
+    font-size: 64px;
+    color: $white;
+    margin-bottom: 20px;
+}
+
+.banner-p {
+    display: block;
+    font-size: 20px;
+    color: $white;
+}
+
+.banner-link {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    width: 190px;
+    padding: 15px;
+    margin-top: 50px;
+    border: 1px solid $maingreen;
+    background-color: $maingreen;
+    &:hover {
+        border: 1px solid $white;
+        background-color: transparent;
+    }
+    
+}
+
+@include breakpoint(tablet) {
+    .banner {
+        padding: 150px 0 180px 0;
+    }
+}
+
+@include breakpoint(phone) {
+    .banner {
+        padding: 33px 0 180px;
+    }
+    .banner-h1 {
+        font-size: 60px;
+    }
+}
+
