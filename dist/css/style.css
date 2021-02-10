@@ -403,8 +403,6 @@ Glyphs list
   background-color: rgba(65, 195, 121, 0.7);
   width: 152px;
   margin-top: 21px; }
-  .item-drop:hover {
-    background-color: #41C379; }
   .item-drop:last-child {
     border-bottom: none; }
 
@@ -412,6 +410,8 @@ Glyphs list
   display: block;
   padding: 15px 10px 15px 10px;
   border-bottom: 1px solid rgba(25, 25, 25, 0.7); }
+  .navigation-drop:hover {
+    background-color: #41C379; }
 
 .p-relative {
   position: relative; }
@@ -460,7 +460,7 @@ Glyphs list
 
 .nav-toggle-line {
   position: absolute;
-  top: 23px;
+  top: 28px;
   left: 0;
   width: 50px;
   height: 4px;
